@@ -1,11 +1,8 @@
 # -*- mode: snippet -*-
 # name: try
 # --
-try
-{
-  $0;
-}
-catch(excinfo)
-{
-  $1;
+try {
+$1;
+} catch(error) {
+$0;
 }
