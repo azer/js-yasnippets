@@ -2,6 +2,9 @@
 # name: for
 # key: for
 # --
-for (var ${1:i}=${2:-1}, len=$3; ${4:++i}<${5:len};){
-$0
-};
+
+var ${1:i} = ${2:-1}, len = $3.length;
+
+for(; ++$1 < len;){
+  $4
+}
